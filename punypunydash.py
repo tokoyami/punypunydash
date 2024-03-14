@@ -20,6 +20,6 @@ def puny_decode_line_cb(data: str, line: dict[str, str]) -> dict[str, str]:
 
 if __name__ == "__main__":
     weechat.register(
-        "punypunydash", "tokoyami", "1", "MIT", "Decodes punycode-encoded strings", "", ""
+        "punypunydash", "tokoyami", "2", "MIT", "Decodes punycode-encoded strings", "", ""
     )
     weechat.hook_line("9999|formatted", "", "", "puny_decode_line_cb", "")
